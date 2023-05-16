@@ -2,27 +2,33 @@
 <html>
 <head>
     <title>Result Page</title>
-    <meta charset="utf-8">
-    <style>
-        h1{
-            font-size: 50px;
-            text-align: center;
-            border-bottom: 1px solid lightgray;
-            padding: 20px;
-            margin:0;
-        }
-
-        p{
-            text-align: center;
-            margin:0;
-            padding:100px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Thank you for playing our game</h1>
-    <p>Click the button and share with others!</p>
-    <input type="button" value="Share" onclick="alert('Shared')">
+    <img src="team_logo.png" width="63">
+    <div id="grid1">
+        <p>
+            <span id="visitor" style="font-size: 72px; font-weight: 700; line-height: 70px;">9,9000 players played<br></span>
+            <span style="font-size: 48px; line-height: 70px;">Thank You for Playing Our Game<br></span>
+            <span id="describe">
+                Click and help children from domestic violence.<br>Share it with others on twitter!
+            </span>
+        </p>
+        <img src="game_logo.png" width="394">
+    </div>
+
+    <div style="text-align: center;">
+        <button type="button" id="share" onclick="btnShareTw()">Share</button>
+    </div>
+    <script>
+        const btnShareTw = document.querySelector('#share');
+
+        btnShareTw.addEventListener('click', () => {
+            const sendText = '아이들의 든든한 보호자가 되어 주세요!';
+            const pageUrl = 'https://opentutorials.org/course/1';
+            window.open('https://twitter.com/intent/tweet?text='+sendText+'&url='+pageUrl);
+        })
+    </script>
 </body>
 </html>
