@@ -1,26 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Result Page</title>
+    <title>Home-Sweet-Home</title>
+    <link rel="icon" href="pavi_en.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="team_logo.png" width="63">
+    <!-- Navigation Bar -->
+    <!--https://philosopher-chan.tistory.com/851-->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <img src="team_logo.png" width="63">
+                <ul>
+                    <li><a href="https://dbswls0308.wixsite.com/eaglesnebula" target="_blank" rel="noopener noreferrer">Our History</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <div id="grid1">
         <p>
-            <span id="visitor" style="font-size: 72px; font-weight: 700; line-height: 70px;">9,9000 players played<br></span>
-            <span style="font-size: 48px; line-height: 70px;">Thank You for Playing Our Game<br></span>
+            <span id="visitor" style="font-family: 'Amatic SC', cursive; font-size: 72px; font-weight: 700; line-height: 70px;">
+               <span id="visitorCount"></span> players played
+               <br>
+            </span>
+            <span style="font-family: 'Amatic SC', cursive; font-size: 48px; line-height: 70px;">Thank You for Playing Our Game<br></span>
             <span id="describe">
                 Click and help children from domestic violence.<br>Share it with others on twitter!
             </span>
         </p>
-        <img src="game_logo.png" width="394">
+        <img id="game_logo" src="game_logo.png" width="394">
     </div>
 
     <div style="text-align: center;">
         <button type="button" id="share" onclick="btnShareTw()">Share</button>
     </div>
+
+    <div id="grid2">
+        <img class="image" src="content1.png" width="200">
+        <p>
+            <span class="title">Lack of hygiene management at home<br></span>
+            <span class="content">If the environment at home is poorly managed or unsanitary, this can be a fatal threat to children's health. 
+                This can be seen as one of the physical signs of neglect.
+            </span>
+        </p>
+        <img class="image" src="content2.png" width="200">
+        <p>
+            <span class="title">An out-of-season outfit<br></span>
+            <span class="content">Clothings that do not match the season can be seen as a physical sign of neglect.</span>
+        </p>
+        <img class="image" src="content3.png" width="200">
+        <p>
+            <span class="title">Malnutrition<br></span>
+            <span class="content">A child's malnutrition and excessive delay in development can be seen as signs of neglect or physical abuse.</span>
+        </p>
+        <img class="image"src="content4.png" width="200">
+        <p>
+            <span class="title">Rescue request<br></span>
+            <span class="content">The child's request for help can be seen as a sign of child abuse.</span>
+        </p>
+        <img class="image" src="content5.png" width="200">
+        <p>
+            <span class="title">Wound<br></span>
+            <span class="content">Wounds with time difference in occurrence and recovery can be seen as a sign of physical abuse.</span>
+        </p>
+    </div>
+
+    <div id="grid3">
+        <p>
+            <span class="title">Avoid contact with adults<br></span>
+            <span class="content">IChildren's excessive aggression or atrophy toward adults can be seen as behavioral signs 
+                of physical abuse by adults.
+            </span>
+        </p>
+        <img class="image3" src="content6.png" width="200">
+
+        <p>
+            <span class="title">Parental abuse of alcohol<br></span>
+            <span class="content">Excessive drinking and dependence by parents can lead to neglect of children.</span>
+        </p>
+        <img class="image3" src="content7.png" width="200">
+
+        <p>
+            <span class="title">Neglect<br></span>
+            <span class="content">Being left alone for a long time without any supervision or care can be seen as a sign of neglect.</span>
+        </p>
+        <img class="image3" src="content8.png" width="200">
+
+        <p>
+            <span class="title">Fear of going back home<br></span>
+            <span class="content">A child fearing to go home can be seen as a behavioral sign of physical abuse.</span>
+        </p>
+        <img class="image3" src="content9.png" width="200">
+
+        <p>
+            <span class="title">Domestic Violence SOS Signal<br></span>
+            <span class="content">The hand gesture, which shows the right palm, folds the thumb, and then folds the rest of the 
+                fingers to form a fist, is a signal that allows victims of domestic violence to secretly ask for help so that 
+                the perpetrator does not notice.
+            </span>
+        </p>
+        <img class="image3" src="content10.png" width="200">
+    </div>
+
+    <!-- Twitter Share -->
     <script>
         const btnShareTw = document.querySelector('#share');
 
@@ -30,5 +116,7 @@
             window.open('https://twitter.com/intent/tweet?text='+sendText+'&url='+pageUrl);
         })
     </script>
+    <!--Visitors-->
+    <script src="checkVisits.js"></script>
 </body>
 </html>
