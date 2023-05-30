@@ -92,11 +92,18 @@ nav ul li a {
     perspective: 1000px;
     animation: logo-ani 5s infinite linear;
 }
+#title {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align:center;
+    padding-top: 150px;
+}
 #grid2{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 2rem;
-    padding-top: 150px;
+    padding-top: 70px;
     padding-right: 200px;
     font-family: 'Inter', sans-serif;
 }
