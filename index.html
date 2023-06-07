@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<div>
     <!-- Navigation Bar -->
     <!--https://philosopher-chan.tistory.com/851-->
     <header>
@@ -39,76 +39,83 @@
         <button type="button" id="share" onclick="btnShareTw()">Share</button>
     </div>
 
-    <div id="title">
+    <div class="titleBig">
         <span>Signals Hidden in the Game</span>
     </div>
 
     <div id="grid2">
         <img class="image" src="content1.png" width="200">
-        <p>
+        <p class="both">
             <span class="title">Lack of hygiene management at home<br></span>
             <span class="content">If the environment at home is poorly managed or unsanitary, this can be a fatal threat to children's health. 
                 This can be seen as one of the physical signs of neglect.
             </span>
         </p>
         <img class="image" src="content2.png" width="200">
-        <p>
+        <p class="both">
             <span class="title">An out-of-season outfit<br></span>
             <span class="content">Clothings that do not match the season can be seen as a physical sign of neglect.</span>
         </p>
         <img class="image" src="content3.png" width="200">
-        <p>
+        <p class="both">
             <span class="title">Malnutrition<br></span>
             <span class="content">A child's malnutrition and excessive delay in development can be seen as signs of neglect or physical abuse.</span>
         </p>
-        <img class="image"src="content4.png" width="200">
-        <p>
+        <img class="image" src="content4.png" width="200">
+        <p class="both">
             <span class="title">Rescue request<br></span>
             <span class="content">The child's request for help can be seen as a sign of child abuse.</span>
         </p>
         <img class="image" src="content5.png" width="200">
-        <p>
+        <p class="both">
             <span class="title">Wound<br></span>
             <span class="content">Wounds with time difference in occurrence and recovery can be seen as a sign of physical abuse.</span>
         </p>
     </div>
 
     <div id="grid3">
-        <p>
+        <p class="both">
             <span class="title">Avoid contact with adults<br></span>
-            <span class="content">IChildren's excessive aggression or atrophy toward adults can be seen as behavioral signs 
+            <span class="content">Children's excessive aggression or atrophy toward adults can be seen as behavioral signs 
                 of physical abuse by adults.
             </span>
         </p>
         <img class="image3" src="content6.png" width="200">
 
-        <p>
+        <p class="both">
             <span class="title">Parental abuse of alcohol<br></span>
             <span class="content">Excessive drinking and dependence by parents can lead to neglect of children.</span>
         </p>
         <img class="image3" src="content7.png" width="200">
 
-        <p>
+        <p class="both">
             <span class="title">Neglect<br></span>
             <span class="content">Being left alone for a long time without any supervision or care can be seen as a sign of neglect.</span>
         </p>
         <img class="image3" src="content8.png" width="200">
 
-        <p>
+        <p class="both">
             <span class="title">Fear of going back home<br></span>
             <span class="content">A child fearing to go home can be seen as a behavioral sign of physical abuse.</span>
         </p>
         <img class="image3" src="content9.png" width="200">
-
-        <p>
-            <span class="title">Domestic Violence SOS Signal<br></span>
-            <span class="content">The hand gesture, which shows the right palm, folds the thumb, and then folds the rest of the 
-                fingers to form a fist, is a signal that allows victims of domestic violence to secretly ask for help so that 
-                the perpetrator does not notice.
-            </span>
-        </p>
-        <img class="image3" src="content10.png" width="200">
     </div>
+
+    <div class="titleBig">
+        <span>Watch Our Promotional Video</span>
+    </div>
+    <div class="video_wrap"><iframe width="700" height="441" src="https://www.youtube.com/embed/uhL8XYPpX-o" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe></div>
+
+    <footer>
+        <div class="inner">
+            <div class="footer-message">폭력이 사라진 아름다운 사회를 꿈꿉니다.</div>
+            <div class="footer-contact">Contact: eaglesnebula23@gmail.com</div>
+            <div class="footer-insta">Instagram: @eagles_nebula</div>
+            <div class="footer-copyright">Copyright 2023. ⓒ EAGLE's NEBULA. All rights reserved.</div>
+        </div>
+    </footer>
 
     <!-- Twitter Share -->
     <script>
@@ -120,7 +127,9 @@
             window.open('https://twitter.com/intent/tweet?text='+sendText+'&url='+pageUrl);
         })
     </script>
+
     <!--Visitors-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="checkVisits.js"></script>
 </body>
 </html>
