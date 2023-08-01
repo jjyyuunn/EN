@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="https://dbswls0308.wixsite.com/eaglesnebula" target="_blank" rel="noopener noreferrer">Our History</a></li>
                 </ul>
-                 <ul>
+                <ul>
                     <li><a href="https://xd.adobe.com/view/8c5c14c9-b8db-45bc-ad94-db0c8a6a7b1e-d90f/" target="_blank" rel="noopener noreferrer">
                         Back to Game
                     </a></li>
@@ -25,11 +25,31 @@
             </nav>
         </div>
     </header>
+
+    <script>
+        expireDate = new Date;
+        expireDate.setMonth(expireDate.getMonth()+3);
+        hitCt = eval(cookieVal("pageHit"));
+        hitCt++;
+        document.cookie = "pageHit="+hitCt+";expires="+expireDate.toGMTString();
+
+        function cookieVal(cookieNmae){
+            thisCookie = document.cookie.split("; ");
+            for (i=0; i<thisCookie.length; i++){
+                if (cookieNmae == thisCookie[i].split("=")[0]){
+                    return thisCookie[i].split("=")[1];
+                }
+            }
+            return 0;
+        }
+    </script>
     
     <div id="grid1">
         <p>
             <span id="visitor" style="font-family: 'Amatic SC', cursive; font-size: 72px; font-weight: 700; line-height: 70px;">
-               <span id="visitorCount"></span> players played
+                <script lang = 'javascript' type="text/javascript">
+                    document.write(hitCt+" players played");
+                </script>
                <br>
             </span>
             <span style="font-family: 'Amatic SC', cursive; font-size: 48px; line-height: 70px;">Thank You for Playing Our Game<br></span>
